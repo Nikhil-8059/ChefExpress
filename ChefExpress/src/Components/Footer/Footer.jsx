@@ -1,6 +1,7 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import {FaXTwitter} from "react-icons/fa6"
 import { PiChefHatBold } from "react-icons/pi";
+    import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -9,11 +10,21 @@ export default function Footer() {
         
         {/* Brand */}
         <div className="flex-1">
+          {/* <a href="#"><h2 className="text-2xl font-bold text-orange-500"><PiChefHatBold />ChefExpress</h2></a> */}
+          <Link to="#"  >
           <h2 className="text-2xl font-bold text-orange-500"><PiChefHatBold />ChefExpress</h2>
-          <p className="text-gray-600 mt-2">
+          </Link>
+          {/* <p className="text-gray-600 mt-2">
             Bringing delicious recipes and fresh ideas to your kitchen every day.
-          </p>
-        </div>
+          </p> */}
+          <p class="mt-5 text-black font-bold">Get the app now!</p>
+          <div className="flex flex-row space-x-4 mt-2">
+          <img src="https://storage.googleapis.com/chefkart-strapi-media/app_store_e12d7f52d9.svg" alt="app store link"/>
+          <img src="https://storage.googleapis.com/chefkart-strapi-media/google_play_bb87168764.svg"/>
+          </div>
+          </div>
+
+        
 
         {/* Links Group 1 */}
         <div className="flex-1">
@@ -33,7 +44,7 @@ export default function Footer() {
             <li><a href="#" className="hover:text-orange-500">Privacy Policy</a></li>
             <li><a href="#" className="hover:text-orange-500">Terms of Service</a></li>
           </ul>
-        </div>
+        </div>      
 
         {/* Social Media */}
         <div className="flex-1">
@@ -48,15 +59,7 @@ export default function Footer() {
 
       </div>
 
-      <div className="flex-1">
-        <h3 >categories</h3>
-        <ul className="space-y-2 text-gray-700">
-          <li>HI Here!!</li>
-          <li>HI Here!!</li>
-          <li>HI Here!!</li>
-          <li>HI Here!!</li>
-          </ul>
-      </div>
+      
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-300 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 px-12">
