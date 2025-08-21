@@ -65,8 +65,8 @@ export default function Footer() {
       <div className="border-t border-gray-300 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 px-12">
         <p>&copy; {new Date().getFullYear()} ChefExpress. All rights reserved.</p>
         <div className="flex space-x-4 mt-2 md:mt-0">
-          <a href="#" className="hover:text-orange-500">Privacy Policy</a>
-          <a href="#" className="hover:text-orange-500">Terms of Service</a>
+          <Link to="#" className="hover:text-orange-500">Privacy Policy</Link>
+          <Link to="#" className="hover:text-orange-500">Terms of Service</Link>
         </div>
       </div>
     </footer>
