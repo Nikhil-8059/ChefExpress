@@ -26,8 +26,8 @@ const Contact = () => {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a href="mailto:example@email.com" className="text-yellow-500 leading-relaxed">
-                example@email.com
+              <a href="mailto:nikhilgautam1601@gmail.com" className="text-orange-500 leading-relaxed">
+                nikhilgautam1601@gmail.com
               </a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 PHONE
@@ -81,7 +81,7 @@ const Contact = () => {
             ></textarea>
           </div>
 
-          <button className="text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
+          <button className="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">
             Submit
           </button>
 
