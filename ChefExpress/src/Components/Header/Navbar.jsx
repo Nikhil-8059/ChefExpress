@@ -17,7 +17,7 @@ const Navbar = () => {
         
         </nav>
 
-        <button className="inline-flex items-center bg-orange-500 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">
+        <button className="inline-flex items-center text-white bg-orange-500 border-0 py-1 px-3 focus:outline-none  hover:bg-orange-600 rounded text-base mt-4 md:mt-0">
           Contact Us
           <svg 
             fill="none" 

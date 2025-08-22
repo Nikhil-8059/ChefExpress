@@ -8,9 +8,14 @@ const Contact = () => {
         <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             title="map"
-            src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Izmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3508.8836311075306!2d77.08036!3d28.422768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19142e78d47b%3A0xde577a7e821cd90!2sChefKart!5e0!3m2!1sen!2sin!4v1755887874990!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
             className="absolute inset-0 w-full h-full"
-            style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
           ></iframe>
 
           <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
@@ -19,14 +24,17 @@ const Contact = () => {
                 ADDRESS
               </h2>
               <p className="mt-1">
-                Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter
+                B-179, Sector 57, near Rail Vihar, Block B, Sushant Lok III, Sector 57, Gurugram, Haryana 122011
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a href="mailto:nikhilgautam1601@gmail.com" className="text-orange-500 leading-relaxed">
+              <a
+                href="mailto:nikhilgautam1601@gmail.com"
+                className="text-orange-500 leading-relaxed"
+              >
                 nikhilgautam1601@gmail.com
               </a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
