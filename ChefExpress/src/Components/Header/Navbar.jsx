@@ -4,21 +4,21 @@ import { PiChefHatBold } from "react-icons/pi";
 
 const Navbar = () => {
   return (
-    <header className="text-gray-600 body-font">
+    <header className="text-white body-font bg-slate-900">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link to="#">
           <span className="text-2xl font-bold text-orange-500"><PiChefHatBold />ChefExpress</span>
         </Link>
 
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center ">
-          <Link to="#" className="mr-5 hover:text-gray-900">Our Services</Link>
-          <Link to="#" className="mr-5 hover:text-gray-900">Cooks Near Me</Link>
-          <Link to="#" className="mr-5 hover:text-gray-900">Third Link</Link>
-          <Link to="#" className="mr-5 hover:text-gray-900">Fourth Link</Link>
+        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center  ">
+          <Link to="#" className="mr-8 hover:text-orange-500">Our Services</Link>
+          <Link to="#" className="mr-8">Cooks Near Me</Link>
+          <Link to="#" className="mr-8 ">ChefExpress से जुड़ें</Link>
+        
         </nav>
 
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Button
+        <button className="inline-flex items-center bg-orange-500 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">
+          Contact Us
           <svg 
             fill="none" 
             stroke="currentColor" 
