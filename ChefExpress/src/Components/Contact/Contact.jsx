@@ -28,7 +28,8 @@ const Contact = () => {
                 ADDRESS
               </h2>
               <p className="mt-1">
-                B-179, Sector 57, near Rail Vihar, Block B, Sushant Lok III, Sector 57, Gurugram, Haryana 122011
+                B-179, Sector 57, near Rail Vihar, Block B, Sushant Lok III,
+                Sector 57, Gurugram, Haryana 122011
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -66,6 +67,7 @@ const Contact = () => {
               type="text"
               id="name"
               name="name"
+              placeholder="Name"
               className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
@@ -76,10 +78,10 @@ const Contact = () => {
               Mobile
             </label>
             <PhoneInput
-              country={"in"} // default country India
+              country={"in"} 
               value={phone}
               onChange={setPhone}
-              enableSearch={true} // allows searching countries
+              enableSearch={true} 
               inputClass="!w-full !bg-white !rounded !border !border-gray-300 focus:!border-yellow-500 focus:!ring-2 focus:!ring-yellow-200 !text-base !outline-none !text-gray-700 !py-1 !px-3 !leading-8 !transition-colors !duration-200 !ease-in-out"
             />
           </div>
@@ -92,47 +94,64 @@ const Contact = () => {
               type="email"
               id="email"
               name="email"
+              placeholder="Email"
               className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
 
           <div className="relative mb-4">
-  <label htmlFor="country" className="leading-7 text-sm text-gray-600">City</label>
-  <div className="relative">
-    <select
-      id="country"
-      name="country"
-      autoComplete="country-name"
-      className="w-full appearance-none bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-    >
-      <option>United States</option>
-      <option>Canada</option>
-      <option>Mexico</option>
-    </select>
+            <label
+              htmlFor="country"
+              className="leading-7 text-sm text-gray-600"
+            >
+              City
+            </label>
+            <div className="relative">
+              <select
+                id="country"
+                name="country"
+                placeholder="City"
+                autoComplete="country-name"
+                className="w-full appearance-none bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              >
+                <option>Ahmedabad</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+                <option>Delhi</option>
+                <option>Gurugram</option>
+                <option>Hyderabad</option>
+                <option>Jaipur</option>
+                <option>Kolkata</option>
+                <option>Lucknow</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+              </select>
 
-    <svg
-      viewBox="0 0 16 16"
-      fill="currentColor"
-      className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
-    >
-      <path
-        d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
-        clipRule="evenodd"
-        fillRule="evenodd"
-      />
-    </svg>
-  </div>
-</div>
-
-
+              <svg
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+              >
+                <path
+                  d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                  clipRule="evenodd"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
 
           <div className="relative mb-4">
-            <label htmlFor="message" className="leading-7 text-sm text-gray-600">
+            <label
+              htmlFor="message"
+              className="leading-7 text-sm text-gray-600"
+            >
               Message
             </label>
             <textarea
               id="message"
               name="message"
+              placeholder="Please write your message in detail."
               className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             ></textarea>
           </div>
@@ -142,7 +161,8 @@ const Contact = () => {
           </button>
 
           <p className="text-xs text-gray-500 mt-3">
-            Chicharrones blog helvetica normcore iceland tousled brook viral artisan.
+            Chicharrones blog helvetica normcore iceland tousled brook viral
+            artisan.
           </p>
         </div>
       </div>
