@@ -18,10 +18,19 @@ export default function Footer() {
             Bringing delicious recipes and fresh ideas to your kitchen every day.
           </p> */}
           <p class="mt-5 text-black font-bold">Get the app now!</p>
-          <div className="flex flex-row space-x-4 mt-2">
-          <img src="https://storage.googleapis.com/chefkart-strapi-media/app_store_e12d7f52d9.svg" alt="app store link"/>
-          <img src="https://storage.googleapis.com/chefkart-strapi-media/google_play_bb87168764.svg"/>
-          </div>
+         <div className="flex flex-wrap gap-4 mt-2 items-center">
+  <img 
+    src="https://storage.googleapis.com/chefkart-strapi-media/app_store_e12d7f52d9.svg" 
+    alt="app store link"
+    className="h-12"
+  />
+  <img 
+    src="https://storage.googleapis.com/chefkart-strapi-media/google_play_bb87168764.svg"
+    alt="google play link"
+    className="h-12"
+  />
+</div>
+
           </div>
 
         
