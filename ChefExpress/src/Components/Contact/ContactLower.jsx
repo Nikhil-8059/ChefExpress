@@ -15,7 +15,7 @@ const ContactLower = () => {
           <img
             className="object-cover rounded-lg w-full max-w-lg"
             alt="chef"
-            src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/7be9b858-1468-46c3-b1ea-7df98a648efd.png"
+            src="https://github.com/Nikhil-8059/ChefExpress/blob/main/ChefExpress/public/images/7be9b858-1468-46c3-b1ea-7df98a648efd.png?raw=true"
           />
         </div>
 
