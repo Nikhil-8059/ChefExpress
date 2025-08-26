@@ -3,15 +3,21 @@ import { Link } from "react-router-dom";
 import { PiChefHatBold } from "react-icons/pi";
 import { FiChevronDown } from "react-icons/fi";
 import Hamburger from "hamburger-react";
+import { FaChevronRight } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io"; // ✅ Simple cross icon
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  // Rough screen width check
+  const isDesktop = window.innerWidth >= 768;
 
   return (
     <header className="text-white body-font bg-slate-900">
       <div className="container mx-auto flex flex-wrap px-12 py-5 flex-row items-center justify-between">
-
 
         {/* Logo */}
         <Link to="#" className="flex items-center">
@@ -30,17 +36,15 @@ const Navbar = () => {
                 className="ml-2 transition-transform duration-300 ease-in-out group-hover:rotate-180"
               />
             </button>
-
-            {/* Dropdown Menu */}
-            <div className="absolute left-0 top-full bg-white text-black mt-1 rounded-lg shadow-lg min-w-[220px] z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 pointer-events-auto">
+            <div className="absolute left-0 top-full bg-white text-black mt-0 rounded-lg shadow-lg min-w-[220px] z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 pointer-events-auto">
               <Link to="#" className="block px-6 py-3 text-lg font-medium hover:text-orange-500 hover:bg-orange-100 rounded-t-lg transition">
-                Hire a Cook
+                One-Time Cook
               </Link>
               <Link to="#" className="block px-6 py-3 text-lg font-medium hover:text-orange-500 hover:bg-orange-100 transition">
-                Catering
+                Chef for Party
               </Link>
               <Link to="#" className="block px-6 py-3 text-lg font-medium hover:text-orange-500 hover:bg-orange-100 rounded-b-lg transition">
-                Meal Plans
+                ChefExpress से जुड़ें
               </Link>
             </div>
           </div>
@@ -48,13 +52,10 @@ const Navbar = () => {
           <Link to="#" className="hover:text-orange-500 font-medium px-3">
             Cooks Near Me
           </Link>
-          <Link to="#" className="hover:text-orange-500 font-medium px-3">
-            ChefExpress से जुड़ें
-          </Link>
         </nav>
 
-        {/* Contact Button (Desktop only) */}
-        <div className="hidden md:flex items-center">
+        {/* Contact Button (Desktop only, hidden when hamburger open) */}
+        <div className={`hidden md:flex items-center ${isMenuOpen && isDesktop ? "hidden" : ""}`}>
           <button className="inline-flex items-center text-white bg-orange-500 border-0 py-2 px-5 hover:bg-orange-600 rounded-lg text-lg font-medium">
             Contact Us
             <svg
@@ -71,11 +72,11 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Hamburger icon visible on all screen sizes */}
+        {/* Hamburger icon */}
         <div className="flex items-center ml-4">
           <Hamburger
-            toggled={isMobileMenuOpen}
-            toggle={setIsMobileMenuOpen}
+            toggled={isMenuOpen}
+            toggle={setIsMenuOpen}
             size={30}
             color="#fff"
             label="Toggle menu"
@@ -83,8 +84,37 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu content only on small devices */}
-      {isMobileMenuOpen && (
+      {/* Slide-in Sidebar for desktop */}
+      <div
+        className={`fixed top-0 right-0 h-full w-1/2 bg-white text-black shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
+          isMenuOpen && isDesktop ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex flex-col p-5 space-y-4">
+          {/* Close button */}
+          <button className="self-end focus:outline-none" onClick={toggleMenu} aria-label="Close Menu">
+            <IoMdClose className="w-8 h-8" /> {/* ✅ Simple cross */}
+          </button>
+
+          <Link to="/about" className="text-lg font-bold hover:text-orange-500" onClick={toggleMenu}>About Us</Link>
+          <hr />
+          <Link to="/blog" className="text-lg font-bold hover:text-orange-500" onClick={toggleMenu}>Blog</Link>
+          <hr />
+          <Link to="/career" className="text-lg font-bold hover:text-orange-500" onClick={toggleMenu}>Career</Link>
+          <hr />
+          <Link to="/investor-relation" className="text-lg font-bold hover:text-orange-500" onClick={toggleMenu}>Investor Relation</Link>
+          <hr />
+          <Link to="/testimonial" className="text-lg font-bold hover:text-orange-500" onClick={toggleMenu}>Testimonials</Link>
+          <hr />
+
+          {/*<button className="mt-4 inline-flex items-center bg-orange-500 border-0 py-2 px-4 rounded text-white text-lg" onClick={toggleMenu}>
+            Contact Us <FaChevronRight className="ml-1" />
+          </button>*/}
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      {isMenuOpen && !isDesktop && (
         <div className="md:hidden bg-slate-800 px-6 pt-3 pb-6 space-y-3">
           <button
             className="flex items-center w-full justify-between hover:text-orange-500 text-lg font-semibold"
@@ -98,27 +128,21 @@ const Navbar = () => {
           {isMobileServicesOpen && (
             <div className="ml-5 space-y-2">
               <Link to="#" className="block text-lg font-medium hover:text-orange-500 hover:bg-orange-700 rounded-lg px-3 py-2 transition">
-                Hire a Cook
+                One-Time Cook
               </Link>
               <Link to="#" className="block text-lg font-medium hover:text-orange-500 hover:bg-orange-700 rounded-lg px-3 py-2 transition">
-                Catering
+                Chef for Party
               </Link>
               <Link to="#" className="block text-lg font-medium hover:text-orange-500 hover:bg-orange-700 rounded-lg px-3 py-2 transition">
-                Meal Plans
+                ChefExpress से जुड़ें
               </Link>
             </div>
           )}
 
-          <Link to="#" className="block text-lg py-2 hover:text-orange-500 font-semibold px-2">
-            Cooks Near Me
-          </Link>
-          <Link to="#" className="block text-lg py-2 hover:text-orange-500 font-semibold px-2">
-            ChefExpress से जुड़ें
-          </Link>
+          <Link to="#" className="block text-lg py-2 hover:text-orange-500 font-semibold px-2">Cooks Near Me</Link>
+          <Link to="#" className="block text-lg py-2 hover:text-orange-500 font-semibold px-2">About Us</Link>
 
-          <button className="w-full text-white bg-orange-500 border-0 py-3 px-5 hover:bg-orange-600 rounded-lg text-lg font-semibold">
-            Contact Us
-          </button>
+          <button className="w-full text-white bg-orange-500 border-0 py-3 px-5 hover:bg-orange-600 rounded-lg text-lg font-semibold">Contact Us</button>
         </div>
       )}
     </header>
