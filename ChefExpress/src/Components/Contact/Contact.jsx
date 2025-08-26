@@ -5,6 +5,7 @@ import ContactLower from "./ContactLower";
 
 const Contact = () => {
   const [phone, setPhone] = useState("");
+  const [city, setCity] = useState("");
 
   return (
     <div>
@@ -19,9 +20,8 @@ const Contact = () => {
 
         <div className="container relative z-10 px-5 py-20 mx-auto">
           <div className="flex flex-col lg:flex-row gap-10 bg-white/90 rounded-2xl shadow-lg p-8">
-            
             {/* Map Section */}
-            <div className="lg:w-2/3 w-full rounded-lg overflow-hidden relative">
+            <div className="lg:w-2/3 w-full rounded-lg overflow-hidden">
               <iframe
                 title="map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3508.8836311075306!2d77.08036!3d28.422768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19142e78d47b%3A0xde577a7e821cd90!2sChefKart!5e0!3m2!1sen!2sin!4v1755887874990!5m2!1sen!2sin"
@@ -30,39 +30,8 @@ const Contact = () => {
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="h-[400px] w-full rounded-lg"
+                className="w-full rounded-lg min-h-[200px]"
               ></iframe>
-
-              {/* Address Box */}
-              <div className="bg-white absolute bottom-4 left-4 right-4 shadow-lg rounded-lg p-5">
-                <div className="flex flex-col md:flex-row justify-between gap-5">
-                  <div>
-                    <h2 className="font-semibold text-gray-900 text-xs tracking-widest">
-                      ADDRESS
-                    </h2>
-                    <p className="mt-1 text-sm">
-                      B-179, Sector 57, near Rail Vihar, Block B, Sushant Lok
-                      III, Sector 57, Gurugram, Haryana 122011
-                    </p>
-                  </div>
-                  <div>
-                    <h2 className="font-semibold text-gray-900 text-xs tracking-widest">
-                      EMAIL
-                    </h2>
-                    <a
-                      href="mailto:nikhilgautam1601@gmail.com"
-                      className="text-orange-500 text-sm"
-                    >
-                      nikhilgautam1601@gmail.com
-                    </a>
-                    <h2 className="font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                      PHONE
-                    </h2>
-                    <p className="text-sm">123-456-7890</p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Contact Form */}
@@ -117,7 +86,14 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-gray-600 mb-1">
                   City
                 </label>
-                <select className="w-full bg-white rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-2 px-3">
+                <select
+                  value={city}
+                  onChange={(e) => setCity(e.target.value)}
+                  className="w-full bg-white rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-400 py-2 px-3"
+                >
+                  <option value="" disabled>
+                    Select your city
+                  </option>
                   <option>Ahmedabad</option>
                   <option>Bangalore</option>
                   <option>Chennai</option>
