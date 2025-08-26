@@ -1,7 +1,9 @@
 import React from "react";
+import FAQ from "./Faq";
 
 const ContactLower = () => {
   return (
+    <div>
     <section className="text-gray-600">
       <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-start gap-10 md:gap-16 px-6 md:px-16 py-10">
         
@@ -40,6 +42,8 @@ const ContactLower = () => {
         </div>
       </div>
     </section>
+    <FAQ/>
+    </div>
   );
 };
 
