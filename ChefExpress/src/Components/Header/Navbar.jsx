@@ -4,7 +4,7 @@ import { PiChefHatBold } from "react-icons/pi";
 import { FiChevronDown } from "react-icons/fi";
 import Hamburger from "hamburger-react";
 import { FaChevronRight } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io"; // ✅ Simple cross icon
+// Removed IoMdClose as it's no longer needed
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -91,10 +91,16 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-col p-5 space-y-4">
-          {/* Close button */}
-          <button className="self-end focus:outline-none" onClick={toggleMenu} aria-label="Close Menu">
-            <IoMdClose className="w-8 h-8" /> {/* ✅ Simple cross */}
-          </button>
+          {/* Hamburger close button at the top of the sidebar */}
+          <div className="self-end">
+            <Hamburger
+              toggled={isMenuOpen}
+              toggle={setIsMenuOpen}
+              size={30}
+              color="#000"
+              label="Toggle menu"
+            />
+          </div>
 
           <Link to="/about" className="text-lg font-bold hover:text-orange-500" onClick={toggleMenu}>About Us</Link>
           <hr />
@@ -107,9 +113,6 @@ const Navbar = () => {
           <Link to="/testimonial" className="text-lg font-bold hover:text-orange-500" onClick={toggleMenu}>Testimonials</Link>
           <hr />
 
-          {/*<button className="mt-4 inline-flex items-center bg-orange-500 border-0 py-2 px-4 rounded text-white text-lg" onClick={toggleMenu}>
-            Contact Us <FaChevronRight className="ml-1" />
-          </button>*/}
         </div>
       </div>
 
