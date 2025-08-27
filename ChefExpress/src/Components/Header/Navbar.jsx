@@ -36,9 +36,9 @@ const Navbar = () => {
 
   return (
     <header className="text-white body-font bg-slate-900">
-      <div className="container mx-auto flex flex-nowrap px-6 md:px-12 py-5 items-center justify-between">
+      <div className="container mx-auto flex flex-wrap px-8 py-5 flex-row items-center justify-between">
         {/* Logo */}
-        <Link to="#" className="flex items-center flex-shrink-0">
+        <Link to="#" className="flex items-center">
           <span className="text-2xl font-bold text-orange-500 flex items-center gap-2">
             <PiChefHatBold className="inline-block text-4xl" />
             ChefExpress
@@ -93,12 +93,12 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Hamburger Icon (Mobile only) */}
-        <div className="flex items-center ml-4 md:hidden">
+        {/* Hamburger Icon */}
+        <div className="flex items-center ml-4">
           <Hamburger
             toggled={isMenuOpen}
             toggle={setIsMenuOpen}
-            size={26}
+            size={30}
             color="#fff"
             label="Toggle menu"
           />
@@ -139,7 +139,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && !isDesktop && (
-        <div className="fixed top-0 left-0 w-4/5 h-full bg-slate-800 px-6 pt-3 pb-6 space-y-3 z-50 shadow-lg transform transition-transform duration-300">
+        <div className="fixed top-0 right-0 w-full h-full bg-slate-900 bg-opacity-90 px-6 pt-3 pb-6 space-y-3 z-50 shadow-lg transform transition-transform duration-300">
           <div className="flex justify-end mb-3">
             <button onClick={toggleMenu}>
               <IoMdClose size={30} className="text-white hover:text-orange-500" />
