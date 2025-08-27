@@ -7,7 +7,7 @@ import { IoMdClose } from "react-icons/io";
 
 // ✅ Centralized Menu Data
 const services = [
-  { label: "One-Time Cook", path: "#" },
+  { label: "One-Time Cook", path: "/month" },
   { label: "Chef for Party", path: "#" },
   { label: "ChefExpress से जुड़ें", path: "#" },
 ];
@@ -79,6 +79,7 @@ const Navbar = () => {
             isMenuOpen && isDesktop ? "hidden" : ""
           }`}
         >
+          <Link to="/contact"> 
           <button className="inline-flex items-center text-white bg-orange-500 py-2 px-5 hover:bg-orange-600 rounded-lg text-lg font-medium">
             Contact Us
             <svg
@@ -91,6 +92,7 @@ const Navbar = () => {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </button>
+          </Link>
         </div>
 
         {/* Hamburger Icon */}
@@ -179,10 +181,12 @@ const Navbar = () => {
           <Link to="/about" className="block text-lg py-2 hover:text-orange-500 font-semibold px-2">
             About Us
           </Link>
-
+          <Link to="/contact"> 
           <button className="w-full text-white bg-orange-500 py-3 px-5 hover:bg-orange-600 rounded-lg text-lg font-semibold">
             Contact Us
           </button>
+          </Link>
+          
         </div>
       )}
     </header>

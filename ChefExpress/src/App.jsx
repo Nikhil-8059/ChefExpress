@@ -6,6 +6,7 @@ import Home from './Components/Home/home'
 import Head from './Components/Header/Head'
 import Footer from './Components/Footer/Footer'
 import Navbar from './Components/Header/navbar'
+import Month from './Components/CookForAmonth/Month'
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
        <Route path='/' element={<Home/>}></Route>
         <Route path='/About' element={<About/>}/>
         <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/Month' element={<Month/>}/>
       </Routes>
       <Footer/>
 
