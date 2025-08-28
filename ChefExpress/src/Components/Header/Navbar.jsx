@@ -20,7 +20,7 @@ const sidebarLinks = [
   { label: "Testimonials", path: "/testimonial" },
 ];
 
-const Navbar = () => {
+const navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
@@ -193,4 +193,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default navbar;
