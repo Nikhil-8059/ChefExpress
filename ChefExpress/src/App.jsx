@@ -5,7 +5,7 @@ import Contact from './Components/Contact/Contact'
 import Home from './Components/Home/Home'
 import Head from './Components/Header/Head'
 import Footer from './Components/Footer/Footer'
-import Navbar from './Components/Header/TNavbar'
+import TNavbar from './Components/Header/TNavbar'
 import Month from './Components/CookForAmonth/Month'
 
 
