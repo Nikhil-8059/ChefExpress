@@ -5,7 +5,7 @@ import Contact from './Components/Contact/Contact'
 import Home from './Components/Home/Home'
 import Head from './Components/Header/Head'
 import Footer from './Components/Footer/Footer'
-import Navbar from './Components/Header/navbar'
+import Navbar from './Components/Header/TNavbar'
 import Month from './Components/CookForAmonth/Month'
 
 
@@ -15,7 +15,7 @@ const App = () => {
     <div>
       
     <Head/>
-    <Navbar/>
+    <TNavbar/>
       <Routes>
        <Route path='/' element={<Home/>}></Route>
         <Route path='/About' element={<About/>}/>
