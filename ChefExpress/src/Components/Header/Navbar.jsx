@@ -38,7 +38,7 @@ const Navbar = () => {
     <header className="text-white body-font bg-slate-900">
       <div className="container mx-auto flex flex-wrap px-8 py-5 flex-row items-center justify-between">
         {/* Logo */}
-        <Link to="#" className="flex items-center">
+        <Link to="/home" className="flex items-center">
           <span className="text-2xl font-bold text-orange-500 flex items-center gap-2">
             <PiChefHatBold className="inline-block text-4xl" />
             ChefExpress
