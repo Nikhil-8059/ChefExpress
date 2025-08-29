@@ -1,9 +1,11 @@
 import React from 'react'
 import FAQ2 from './Faq2'
+import Lower from './Lower'
 
 const ChefConnection = () => {
   return (
-    <div>ChefConnection
+    <div>
+        <Lower/>
         <FAQ2/>
     </div>
   )
