@@ -3,7 +3,7 @@ import React from 'react'
 const Lower = () => {
   return (
     <section className="bg-[#fdf1e6] hidden md:block">
-      <div className="container mx-auto grid md:grid-cols-2 gap-8 px-12 py-24 items-center">
+      <div className="container mx-auto grid md:grid-cols-2 gap-8 px-12 py-20 items-center">
         
         {/* Left Heading */}
         <div className="flex justify-center">
