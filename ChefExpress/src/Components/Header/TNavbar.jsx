@@ -9,7 +9,7 @@ import { IoMdClose } from "react-icons/io";
 const services = [
   { label: "One-Time Cook", path: "/month" },
   { label: "Chef for Party", path: "#" },
-  { label: "ChefExpress से जुड़ें", path: "/chefconnection" },
+  { label: "ChefExpress से जुड़ें", path: "/Join-as-Chef" },
 ];
 
 const sidebarLinks = [
