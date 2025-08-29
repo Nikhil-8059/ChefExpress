@@ -7,6 +7,7 @@ import Head from './Components/Header/Head'
 import Footer from './Components/Footer/Footer'
 import TNavbar from './Components/Header/TNavbar'
 import Month from './Components/CookForAmonth/Month'
+import ChefConnection from './Components/ChefConnection/ChefConnection'
 
 
 
@@ -21,6 +22,8 @@ const App = () => {
         <Route path='/About' element={<About/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Month' element={<Month/>}/>
+        <Route path='/ChefConnection' element={<ChefConnection/>}/>
+
       </Routes>
       <Footer/>
 
