@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import Footer from "../Footer/Footer";
+
 
 const FAQ2 = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -78,7 +78,7 @@ const FAQ2 = () => {
           })}
         </div>
       </div>
-      <Footer/>
+      
     </div>
   );
 };
