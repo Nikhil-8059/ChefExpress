@@ -3,7 +3,7 @@ import React from "react";
 const Low = () => {
   return (
     <div>
-      <section className="text-black bg-stone-500 body-font overflow-hidden">
+      <section className="text-black bg-neutral-300 body-font overflow-hidden">
         <div className="container px-8 py-8">
           <div className="lg:w-4/5 flex flex-wrap">
             <img
