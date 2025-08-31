@@ -9,7 +9,7 @@ const Low = () => {
           <img
             alt="ecommerce"
             className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-            src="https://dummyimage.com/400x400"
+            src="https://github.com/Nikhil-8059/ChefExpress/blob/main/ChefExpress/public/images/7be9b858-1468-46c3-b1ea-7df98a648efd.png?raw=true"
           />
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">
