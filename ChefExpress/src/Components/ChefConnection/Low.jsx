@@ -12,10 +12,10 @@ const Low = () => {
             src="https://github.com/Nikhil-8059/ChefExpress/blob/main/ChefExpress/public/images/7be9b858-1468-46c3-b1ea-7df98a648efd.png?raw=true"
           />
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-            <h2 className="text-sm title-font text-orange-400 font-bold tracking-widest">
+            <h2 className="text-2xl title-font text-orange-400 font-bold tracking-widest">
               हमें है विश्वास
             </h2>
-            <h1 className="text-gray-900 text-3xl title-font font-extrabold mb-1">
+            <h1 className="text-gray-900 text-justify text-6xl title-font font-extrabold mb-1">
               आपका बनाया खाना, खाएगा ज़माना!
             </h1>
             <div className="flex mb-4">
