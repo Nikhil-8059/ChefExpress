@@ -3,15 +3,15 @@ import React from 'react'
 const Low = () => {
   return (
     <div>
-         <section className="text-gray-600 bg-slate-600 body-font overflow-hidden">
+         <section className="text-black bg-zinc-500 body-font overflow-hidden">
       <div className="container px-5 py-8">
-        <div className="lg:w-4/5 mx-auto flex flex-wrap">
+        <div className="lg:w-4/5 flex flex-wrap">
           <img
             alt="Chefs"
             className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
             src="https://github.com/Nikhil-8059/ChefExpress/blob/main/ChefExpress/public/images/7be9b858-1468-46c3-b1ea-7df98a648efd.png?raw=true"
           />
-          <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-10">
             <h2 className="text-2xl title-font text-orange-400 font-bold tracking-normal">
               हमें है विश्वास
             </h2>
