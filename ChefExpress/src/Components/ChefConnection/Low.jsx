@@ -18,6 +18,10 @@ const Low = () => {
             <h1 className="text-gray-900 text-justify text-6xl title-font font-extrabold mb-1">
               आपका बनाया खाना, खाएगा ज़माना!
             </h1>
+
+            <h2 className="text-2xl title-font text-orange-400 font-bold tracking-widest">
+              हमें है विश्वास
+            </h2>
             <div className="flex mb-4">
               <span className="flex items-center">
                 <svg
