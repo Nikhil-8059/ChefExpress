@@ -8,6 +8,9 @@ import Footer from './Components/Footer/Footer'
 import TNavbar from './Components/Header/TNavbar'
 import Month from './Components/CookForAmonth/Month'
 import ChefConnection from './Components/ChefConnection/ChefConnection'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 
