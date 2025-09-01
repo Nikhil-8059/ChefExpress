@@ -1,28 +1,30 @@
-
 import React from "react";
-import Slider from "react-slick";
 import { FaStar } from "react-icons/fa";
+import Slider from "react-slick"; 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const Testimonials = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    slidesToShow: 3,
+    speed: 500,
+    slidesToShow: 3,  // show 3 testimonials at once
     slidesToScroll: 1,
-    arrows: true,
     responsive: [
       {
         breakpoint: 1024, // tablet
-        settings: { slidesToShow: 2 }
+        settings: {
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 768, // mobile
-        settings: { slidesToShow: 1 }
-      }
-    ]
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -33,13 +35,13 @@ const Testimonials = () => {
         </h2>
 
         <Slider {...settings}>
-          {/* Testimonial 1 */}
-          <div className="px-4">
+           {/* Testimonial 1  */}
+          <div className="px-3 py-10">
             <div className="bg-[#1E3932] text-white rounded-2xl p-6 relative flex flex-col items-center shadow-lg">
               <img
                 src="https://media.istockphoto.com/id/1291246487/photo/portrait-young-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=9kww0BGomB0ZtHmxt7l3mSqXqerm4BpqqL145cLm3eI="
                 alt="सुनीता शर्मा"
-                className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover mx-auto border-4 border-white"
+                className="w-20 h-20 rounded-full border-4 border-white absolute -top-10"
               />
               <div className="mt-12 text-center">
                 <div className="flex justify-center mb-3 text-yellow-400">
@@ -55,12 +57,12 @@ const Testimonials = () => {
           </div>
 
           {/* Testimonial 2 */}
-          <div className="px-4">
+          <div className="px-3  py-10">
             <div className="bg-[#1E3932] text-white rounded-2xl p-6 relative flex flex-col items-center shadow-lg">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTSSGD8QV-K-qwsXjPxVRt6dxPTMeCnyJ5xQ&s"
                 alt="राकेश यादव"
-                className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover mx-auto border-4 border-white"
+                className="w-20 h-20 rounded-full border-4 border-white absolute -top-10"
               />
               <div className="mt-12 text-center">
                 <div className="flex justify-center mb-3 text-yellow-400">
@@ -76,12 +78,12 @@ const Testimonials = () => {
           </div>
 
           {/* Testimonial 3 */}
-          <div className="px-4">
+          <div className="px-3 py-10">
             <div className="bg-[#1E3932] text-white rounded-2xl p-6 relative flex flex-col items-center shadow-lg">
               <img
                 src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2021/05/24160041/Inside-Image-Vertical-30.jpeg"
                 alt="अनिता वर्मा"
-                className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover mx-auto border-4 border-white"
+                className="w-20 h-20 rounded-full border-4 border-white absolute -top-10"
               />
               <div className="mt-12 text-center">
                 <div className="flex justify-center mb-3 text-yellow-400">
@@ -102,7 +104,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-           
-           
-           
