@@ -6,6 +6,7 @@ import Low from './Low'
 const ChefConnection = () => {
   return (
     <div>
+        <Testimonials/>
         <Low/>
         <Lower/>
         <FAQ2/>
