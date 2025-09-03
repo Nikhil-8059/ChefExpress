@@ -5,15 +5,17 @@ const Cater = () => {
     <div>
        
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap -m-4">
-          
+      <div className="container px-5 py-24">
+
+        <h1 className='text-center text-black font-bold text-3xl mb-12'>ChefExpress से क्यूँ जुड़ें?</h1>
+        
+        <div className="flex flex-wrap -m-4 justify-center lg:gap-14">      
           {/* Card 1 */}
-          <div className="p-4 md:w-1/3">
+          <div className="p-4 md:w-1/4">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="https://dummyimage.com/720x400"
+                className="lg:h-48 md:h-36 w-full object-fill"
+                src="https://thechefkart.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fchefkart-strapi-media%2FEarn_Money_c09cff227a.webp&w=1920&q=75"
                 alt="blog"
               />
               <div className="p-6">
@@ -78,7 +80,7 @@ const Cater = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="p-4 md:w-1/3">
+          <div className="p-4 md:w-1/4">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -147,7 +149,7 @@ const Cater = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="p-4 md:w-1/3">
+          <div className="p-4 md:w-1/4">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
