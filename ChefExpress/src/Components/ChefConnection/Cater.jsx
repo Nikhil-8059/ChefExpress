@@ -112,7 +112,7 @@ const Cater = () => {
                   CATEGORY
                 </h2>
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                  Shooting Stars
+                  ट्रेनिंग एवं सहायता
                 </h1>
                 <p className="leading-relaxed mb-3">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
