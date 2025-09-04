@@ -115,8 +115,7 @@ const Cater = () => {
                   ट्रेनिंग एवं सहायता
                 </h1>
                 <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                  हमारे शेफ़ से ट्रेनिंग में नए पकवान बनाना सीखें। किसी भी समस्या में तुरंत सहायता पाएँ।
                 </p>
                 <div className="flex items-center flex-wrap">
                   <a className="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0">
