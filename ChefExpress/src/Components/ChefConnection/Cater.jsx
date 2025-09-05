@@ -34,7 +34,7 @@ const Cater = () => {
 
           {/* Card 2 */}
           <div className="p-4 md:w-1/4">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <div className="h-full">
               <img
                 className="lg:h-48 md:h-36 w-full object-fill object-center"
                 src="https://thechefkart.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fchefkart-strapi-media%2FBe_your_own_boss_1_ff6c9822fd.webp&w=1920&q=75"
@@ -45,9 +45,8 @@ const Cater = () => {
                 <h1 className="title-font text-xl text-center font-bold text-gray-900 mb-2">
                   सम्मान से काम
                 </h1>
-                <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                <p className="leading-relaxed text-xl text-center">
+                  समाज में एक पेशेवर कुक के रूप में सम्मान और पहचान प्राप्त करें।
                 </p>
                 
               </div>
@@ -56,7 +55,7 @@ const Cater = () => {
 
           {/* Card 3 */}
           <div className="p-4 md:w-1/4">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <div className="h-full">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
                 src="https://thechefkart.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fchefkart-strapi-media%2FCustomer_support_26823bc403.webp&w=1920&q=75"
