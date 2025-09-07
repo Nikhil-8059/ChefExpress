@@ -66,7 +66,7 @@ const Cater = () => {
                 <h1 className="title-font text-xl text-center font-bold text-gray-900 mb-2">
                   ट्रेनिंग एवं सहायता
                 </h1>
-                <p className="leading-relaxed mb-3 text-xl text-center">
+                <p className="leading-relaxed  text-xl text-center">
                   हमारे शेफ़ से ट्रेनिंग में नए पकवान बनाना सीखें। किसी भी समस्या में तुरंत सहायता पाएँ।
                 </p>
                 
