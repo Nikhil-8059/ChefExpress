@@ -6,7 +6,7 @@ const Cater = () => {
        
     <section className="text-gray-600 body-font">
 
-                <h1 className='text-center text-black font-bold text-3xl mt-2'>ChefExpress से क्यूँ जुड़ें?</h1>
+                <h1 className='text-center text-black font-bold text-3xl mt-8'>ChefExpress से क्यूँ जुड़ें?</h1>
       <div className="container px-5 py-10">
 
         
