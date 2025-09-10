@@ -14,7 +14,7 @@ export default function SimpleSlider() {
   return (
     <Slider {...settings}>
       <div>
-        <img src="public/images/Screenshot 2025-09-10 225427.png" alt="" />
+        <img src="images/Screenshot 2025-09-10 225427.png" alt="" />
       </div>
       <div>
         <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
