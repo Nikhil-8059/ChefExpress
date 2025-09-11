@@ -20,17 +20,18 @@ export default function SimpleSlider() {
         <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
       </div>
       <div>
-        <h3>3</h3>
+        <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
       </div>
       <div>
-        <h3>4</h3>
+        <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
       </div>
       <div>
-        <h3>5</h3>
+        <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
       </div>
       <div>
-        <h3>6</h3>
+        <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
       </div>
+      
     </Slider>
   );
 }
