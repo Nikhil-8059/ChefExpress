@@ -28,9 +28,6 @@ export default function SimpleSlider() {
       <div>
         <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
       </div>
-      <div>
-        <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
-      </div>
       
     </Slider>
   );
