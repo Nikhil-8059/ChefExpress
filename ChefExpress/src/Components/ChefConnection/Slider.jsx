@@ -3,48 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Custom Next Arrow using SVG
-const NextArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
-      onClick={onClick}
-    >
-      <svg
-        className="w-8 h-8 text-gray-800 hover:text-gray-600"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        viewBox="0 0 24 24"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-      </svg>
-    </div>
-  );
-};
-
-// Custom Previous Arrow using SVG
-const PrevArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
-      onClick={onClick}
-    >
-      <svg
-        className="w-8 h-8 text-gray-800 hover:text-gray-600"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        viewBox="0 0 24 24"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-      </svg>
-    </div>
-  );
-};
-
 export default function SimpleSlider() {
   const settings = {
     dots: false,
@@ -53,8 +11,32 @@ export default function SimpleSlider() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: (
+      <div className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10">
+        <svg
+          className="w-8 h-8 text-gray-800 hover:text-gray-600"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    ),
+    prevArrow: (
+      <div className="absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10">
+        <svg
+          className="w-8 h-8 text-gray-800 hover:text-gray-600"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </div>
+    ),
     responsive: [
       {
         breakpoint: 768,
