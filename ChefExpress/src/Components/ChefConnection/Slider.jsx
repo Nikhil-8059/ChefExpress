@@ -4,31 +4,31 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function SimpleSlider() {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
     <Slider {...settings}>
-      <div>
-        <img src="images/Screenshot 2025-09-10 225427.png" alt="" />
+      <div className="flex justify-center items-center h-64">
+        <img src="images/Screenshot 2025-09-10 225427.png" alt="" className="object-contain max-h-full" />
       </div>
-      <div>
-        <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
+      <div className="flex justify-center items-center h-64">
+        <img src="images/Screenshot 2025-09-10 225442.png" alt="" className="object-contain max-h-full" />
       </div>
-      <div>
-        <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
+      <div className="flex justify-center items-center h-64">
+        <img src="images/Screenshot 2025-09-10 225442.png" alt="" className="object-contain max-h-full" />
       </div>
-      <div>
-        <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
+      <div className="flex justify-center items-center h-64">
+        <img src="images/Screenshot 2025-09-10 225442.png" alt="" className="object-contain max-h-full" />
       </div>
-      <div>
-        <img src="images/Screenshot 2025-09-10 225442.png" alt="" />
+      <div className="flex justify-center items-center h-64">
+        <img src="images/Screenshot 2025-09-10 225442.png" alt="" className="object-contain max-h-full" />
       </div>
-      
     </Slider>
   );
 }
