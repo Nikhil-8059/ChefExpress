@@ -12,7 +12,7 @@ export default function SimpleSlider() {
     slidesToShow: 2,
     slidesToScroll: 2,
     nextArrow: (
-      <div className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10">
+      <div className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10 bg-white rounded-full p-2 shadow-md">
         <svg
           className="w-8 h-8 text-gray-800 hover:text-gray-600"
           fill="none"
@@ -25,7 +25,7 @@ export default function SimpleSlider() {
       </div>
     ),
     prevArrow: (
-      <div className="absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10">
+      <div className="absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10 bg-white rounded-full p-2 shadow-md">
         <svg
           className="w-8 h-8 text-gray-800 hover:text-gray-600"
           fill="none"
@@ -39,6 +39,13 @@ export default function SimpleSlider() {
     ),
     responsive: [
       {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -49,42 +56,52 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="w-full py-10 relative">
+    <div className="w-full max-w-6xl mx-auto py-10 px-4 relative">
       <Slider {...settings}>
-        <div className="h-[300px] flex justify-center items-center">
-          <img
-            src="images/Screenshot 2025-09-10 225427.png"
-            alt="Slide 1"
-            className="h-full w-auto object-contain"
-          />
+        <div className="flex justify-center items-center p-4">
+          <div className="h-[300px] w-full max-w-md bg-white flex justify-center items-center">
+            <img
+              src="images/Screenshot 2025-09-10 225427.png"
+              alt="Slide 1"
+              className="max-h-[250px] max-w-full object-contain"
+            />
+          </div>
         </div>
-        <div className="h-[300px] flex justify-center items-center">
-          <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 2"
-            className="h-full w-auto object-contain"
-          />
+        <div className="flex justify-center items-center p-4">
+          <div className="h-[300px] w-full max-w-md bg-white flex justify-center items-center">
+            <img
+              src="images/Screenshot 2025-09-10 225442.png"
+              alt="Slide 2"
+              className="max-h-[250px] max-w-full object-contain"
+            />
+          </div>
         </div>
-        <div className="h-[300px] flex justify-center items-center">
-          <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 3"
-            className="h-full w-auto object-contain"
-          />
+        <div className="flex justify-center items-center p-4">
+          <div className="h-[300px] w-full max-w-md bg-white flex justify-center items-center">
+            <img
+              src="images/Screenshot 2025-09-10 225442.png"
+              alt="Slide 3"
+              className="max-h-[250px] max-w-full object-contain"
+            />
+          </div>
         </div>
-        <div className="h-[300px] flex justify-center items-center">
-          <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 4"
-            className="h-full w-auto object-contain"
-          />
+        <div className="flex justify-center items-center p-4">
+          <div className="h-[300px] w-full max-w-md bg-white flex justify-center items-center">
+            <img
+              src="images/Screenshot 2025-09-10 225442.png"
+              alt="Slide 4"
+              className="max-h-[250px] max-w-full object-contain"
+            />
+          </div>
         </div>
-        <div className="h-[300px] flex justify-center items-center">
-          <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 5"
-            className="h-full w-auto object-contain"
-          />
+        <div className="flex justify-center items-center p-4">
+          <div className="h-[300px] w-full max-w-md bg-white flex justify-center items-center">
+            <img
+              src="images/Screenshot 2025-09-10 225442.png"
+              alt="Slide 5"
+              className="max-h-[250px] max-w-full object-contain"
+            />
+          </div>
         </div>
       </Slider>
     </div>
