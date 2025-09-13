@@ -36,7 +36,7 @@ const Cater = () => {
           <div className="p-4 md:w-1/4">
             <div className="h-full">
               <img
-                className="lg:h-48 md:h-36 w-full object-fill object-center"
+                className="lg:h-48 md:h-36 w-full object-fill object-center rounded-lg"
                 src="https://thechefkart.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fchefkart-strapi-media%2FBe_your_own_boss_1_ff6c9822fd.webp&w=1920&q=75"
                 alt="blog"
               />
@@ -57,7 +57,7 @@ const Cater = () => {
           <div className="p-4 md:w-1/4">
             <div className="h-full">
               <img
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
+                className="lg:h-48 md:h-36 w-full object-cover object-center rounded-lg"
                 src="https://thechefkart.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fchefkart-strapi-media%2FCustomer_support_26823bc403.webp&w=1920&q=75"
                 alt="blog"
               />
