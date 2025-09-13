@@ -14,7 +14,7 @@ export default function SimpleSlider() {
     nextArrow: (
       <div className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10">
         <svg
-          className="w-8 h-8 text-gray-800 hover:text-gray-600"
+          className="w-6 h-6 text-gray-800 hover:text-gray-600"
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
@@ -27,7 +27,7 @@ export default function SimpleSlider() {
     prevArrow: (
       <div className="absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer z-10">
         <svg
-          className="w-8 h-8 text-gray-800 hover:text-gray-600"
+          className="w-6 h-6 text-gray-800 hover:text-gray-600"
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
@@ -49,37 +49,37 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="w-full py-10 relative">
+    <div className="w-full py-10 px-4 relative">
       <Slider {...settings}>
-        <div className="h-[400px] flex justify-center items-center">
+        <div className="h-[250px] flex justify-center items-center">
           <img
             src="images/Screenshot 2025-09-10 225427.png"
             alt="Slide 1"
             className="h-full w-auto object-contain"
           />
         </div>
-        <div className="h-[400px] flex justify-center items-center">
+        <div className="h-[250px] flex justify-center items-center">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 2"
             className="h-full w-auto object-contain"
           />
         </div>
-        <div className="h-[400px] flex justify-center items-center">
+        <div className="h-[250px] flex justify-center items-center">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 3"
             className="h-full w-auto object-contain"
           />
         </div>
-        <div className="h-[400px] flex justify-center items-center">
+        <div className="h-[250px] flex justify-center items-center">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 4"
             className="h-full w-auto object-contain"
           />
         </div>
-        <div className="h-[400px] flex justify-center items-center">
+        <div className="h-[250px] flex justify-center items-center">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 5"
