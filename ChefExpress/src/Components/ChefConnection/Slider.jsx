@@ -2,25 +2,25 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { GiHidden } from "react-icons/gi";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function SimpleSlider() {
   const settings = {
     dots: true,
-     infinite: true,
+    infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
     nextArrow: (
-    <div>
-      <div className="next-slick-arrow"></div>
-    </div>
-  ),
-  prevArrow: (
-    <div>
-      <div className="prev-slick-arrow"> </div>
-    </div>
-  ),
+      <div className="next-slick-arrow cursor-pointer">
+        <IoIosArrowForward className="w-6 h-6 text-gray-800" />
+      </div>
+    ),
+    prevArrow: (
+      <div className="prev-slick-arrow cursor-pointer">
+        <IoIosArrowForward className="w-6 h-6 text-gray-800" />
+      </div>
+    ),
     responsive: [
       {
         breakpoint: 1024,
@@ -40,13 +40,13 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto py-10 px-10 ">
+    <div className="w-full max-w-7xl mx-auto py-10 px-10">
       <Slider {...settings}>
         <div className="flex justify-center items-center p-4">
           <img
             src="images/Screenshot 2025-09-10 225427.png"
             alt="Slide 1"
-            className=" mt-12 w-auto object-contain"
+            className="mt-12 w-auto object-contain"
           />
         </div>
         <div className="flex justify-center items-center p-4">
@@ -80,7 +80,4 @@ export default function SimpleSlider() {
       </Slider>
     </div>
   );
-} 
-
-
-
+}
