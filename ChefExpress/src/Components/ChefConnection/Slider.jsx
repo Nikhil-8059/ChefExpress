@@ -41,6 +41,8 @@ export default function SimpleSlider() {
 
   return (
     <div className="w-full max-w-7xl mx-auto py-10 px-10">
+      <h1 className="text-5xl text-center mt-5 mb-3 font-semibold">एक प्रमुख पहल</h1>
+
       <Slider {...settings}>
         <div className="flex justify-center items-center p-4">
           <img
