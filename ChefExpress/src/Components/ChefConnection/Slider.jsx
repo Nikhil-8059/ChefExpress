@@ -2,16 +2,25 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { GiHidden } from "react-icons/gi";
 
 export default function SimpleSlider() {
   const settings = {
-    dots: false,
-    arrows: true,
-    infinite: true,
+    dots: true,
+     infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
+    nextArrow: (
+    <div>
+      <div className="next-slick-arrow"></div>
+    </div>
+  ),
+  prevArrow: (
+    <div>
+      <div className="prev-slick-arrow"> </div>
+    </div>
+  ),
     responsive: [
       {
         breakpoint: 1024,
@@ -31,7 +40,7 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto py-10 px-10">
+    <div className="w-full max-w-7xl mx-auto py-10 px-10 ">
       <Slider {...settings}>
         <div className="flex justify-center items-center p-4">
           <img
@@ -69,8 +78,6 @@ export default function SimpleSlider() {
           />
         </div>
       </Slider>
-
-      
     </div>
   );
 } 
