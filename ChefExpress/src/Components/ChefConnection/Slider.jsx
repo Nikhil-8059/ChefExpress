@@ -9,7 +9,7 @@ export default function SimpleSlider() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 2,      // Default for larger screens
     slidesToScroll: 2,
     arrows: true,
     autoplay: true,
@@ -26,9 +26,9 @@ export default function SimpleSlider() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,    // ✅ Show 2 images side by side on mobile
-          slidesToScroll: 2,
-          arrows: false,       // ✅ Hide arrows on mobile
+          slidesToShow: 1,  // ✅ Show 1 image at a time on mobile
+          slidesToScroll: 1,
+          arrows: false,    // ✅ Hide arrows on mobile
           autoplay: true,
           autoplaySpeed: 3000,
         },
