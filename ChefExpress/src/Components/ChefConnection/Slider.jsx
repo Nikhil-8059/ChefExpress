@@ -9,26 +9,18 @@ export default function SimpleSlider() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,      // Default for larger screens
+    slidesToShow: 2,      // Desktop: show 2 slides side by side
     slidesToScroll: 2,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          arrows: true,
-        },
-      },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,  // ✅ Show 1 image at a time on mobile
+          slidesToShow: 1,  // Mobile: show 1 slide at a time
           slidesToScroll: 1,
-          arrows: false,    // ✅ Hide arrows on mobile
+          arrows: false,    // Hide arrows on mobile
           autoplay: true,
           autoplaySpeed: 3000,
         },
@@ -48,44 +40,64 @@ export default function SimpleSlider() {
 
   return (
     <div className="w-full max-w-7xl mx-auto py-6 px-4 sm:px-6 md:px-10">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl text-center mt-4 sm:mt-5 md:mt-8 mb-4 sm:mb-6 md:mb-8 font-semibold">
+      <h1 className="text-3xl text-center mt-4 sm:mt-5 md:mt-8 mb-4 sm:mb-6 md:mb-8 font-semibold">
         एक प्रमुख पहल
       </h1>
 
       <Slider {...settings}>
-        <div className="flex justify-center items-center p-2 sm:p-4">
+        {/* Slide 1 */}
+        <div className="flex flex-col md:block justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225427.png"
             alt="Slide 1"
             className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
           />
+          <img
+            src="images/Screenshot 2025-09-10 225442.png"
+            alt="Slide 1 second image"
+            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0"
+          />
         </div>
-        <div className="flex justify-center items-center p-2 sm:p-4">
+
+        {/* Slide 2 */}
+        <div className="flex flex-col md:block justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 2"
             className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
           />
+          <img
+            src="images/Screenshot 2025-09-10 225427.png"
+            alt="Slide 2 second image"
+            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0"
+          />
         </div>
-        <div className="flex justify-center items-center p-2 sm:p-4">
+
+        {/* Slide 3 */}
+        <div className="flex flex-col md:block justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 3"
             className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
           />
+          <img
+            src="images/Screenshot 2025-09-10 225442.png"
+            alt="Slide 3 second image"
+            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0"
+          />
         </div>
-        <div className="flex justify-center items-center p-2 sm:p-4">
+
+        {/* Slide 4 */}
+        <div className="flex flex-col md:block justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 4"
             className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
           />
-        </div>
-        <div className="flex justify-center items-center p-2 sm:p-4">
           <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 5"
-            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
+            src="images/Screenshot 2025-09-10 225427.png"
+            alt="Slide 4 second image"
+            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0"
           />
         </div>
       </Slider>
