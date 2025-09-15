@@ -50,7 +50,7 @@ export default function SimpleSlider() {
       </h1>
       <Slider {...settings}>
         
-        <div className="flex justify-center items-center p-2 sm:p-4">
+        <div className="md-flex-col flex justify-center items-center p-2 sm:p-4">
           
           <img
             src="images/Screenshot 2025-09-10 225427.png"
@@ -58,7 +58,7 @@ export default function SimpleSlider() {
             className=" mt-10 w-full h-auto max-h-80 md:max-h-96 object-contain"
           />
         </div>
-        <div className="flex justify-center items-center p-2 sm:p-4">
+        <div className="md-flex-col flex justify-center items-center p-2 sm:p-4">
           
           <img
             src="images/Screenshot 2025-09-10 225442.png"
@@ -66,7 +66,7 @@ export default function SimpleSlider() {
             className="w-full h-auto max-h-80 md:max-h-96 object-contain"
           />
         </div>
-        <div className="flex justify-center items-center p-2 sm:p-4">
+        <div className="md-flex-col flex justify-center items-center p-2 sm:p-4">
           
           <img
             src="images/Screenshot 2025-09-10 225442.png"
@@ -74,7 +74,7 @@ export default function SimpleSlider() {
             className="w-full h-auto max-h-80 md:max-h-96 object-contain"
           />
         </div>
-        <div className="flex justify-center items-center p-2 sm:p-4">
+        <div className="md-flex-col flex justify-center items-center p-2 sm:p-4">
           
           <img
             src="images/Screenshot 2025-09-10 225442.png"
@@ -82,7 +82,7 @@ export default function SimpleSlider() {
             className="w-full h-auto max-h-80 md:max-h-96 object-contain"
           />
         </div>
-        <div className="flex justify-center items-center p-2 sm:p-4">
+        <div className="md-flex-col flex justify-center items-center p-2 sm:p-4">
           
           <img
             src="images/Screenshot 2025-09-10 225442.png"
