@@ -12,6 +12,8 @@ export default function SimpleSlider() {
     slidesToShow: 2,
     slidesToScroll: 2,
     arrows: true,
+    autoplay:true,
+    autoplaySpeed:1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -53,7 +55,7 @@ export default function SimpleSlider() {
           <img
             src="images/Screenshot 2025-09-10 225427.png"
             alt="Slide 1"
-            className="w-full h-auto max-h-80 md:max-h-96 object-contain"
+            className=" mt-10 w-full h-auto max-h-80 md:max-h-96 object-contain"
           />
         </div>
         <div className="flex justify-center items-center p-2 sm:p-4">
