@@ -12,8 +12,8 @@ export default function SimpleSlider() {
     slidesToShow: 2,
     slidesToScroll: 2,
     arrows: true,
-    autoplay:true,
-    autoplaySpeed:1000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -26,9 +26,9 @@ export default function SimpleSlider() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
+          slidesToShow: 2,      // ✅ Show 2 slides on mobile
+          slidesToScroll: 2,
+          arrows: false,         // ✅ Hide arrows on mobile
           autoplay: true,
           autoplaySpeed: 3000,
         },
@@ -47,43 +47,45 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto py-10 px-4 sm:px-6 md:px-10 overflow-hidden">
-      <h1 className="text-3xl md:text-5xl text-center mt-5 mb-3 font-semibold">एक प्रमुख पहल</h1>
+    <div className="w-full max-w-7xl mx-auto py-6 px-4 sm:px-6 md:px-10">
+      <h1 className=" text-4xl text-center mt-4 sm:mt-5 md:mt-8 mb-4 sm:mb-6 md:mb-8 font-semibold">
+        एक प्रमुख पहल
+      </h1>
 
       <Slider {...settings}>
         <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225427.png"
             alt="Slide 1"
-            className=" mt-10 w-full h-auto max-h-80 md:max-h-96 object-contain"
+            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
           />
         </div>
         <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 2"
-            className="w-full h-auto max-h-80 md:max-h-96 object-contain"
+            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
           />
         </div>
         <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 3"
-            className="w-full h-auto max-h-80 md:max-h-96 object-contain"
+            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
           />
         </div>
         <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 4"
-            className="w-full h-auto max-h-80 md:max-h-96 object-contain"
+            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
           />
         </div>
         <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 5"
-            className="w-full h-auto max-h-80 md:max-h-96 object-contain"
+            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
           />
         </div>
       </Slider>

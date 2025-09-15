@@ -6,10 +6,12 @@ import Testimonials from './Testimonials'
 import Cater from './Cater'
 // import Slider from './Slider'
 import SimpleSlider from './Slider'
+import Stats from './Stats'
 
 const ChefConnection = () => {
   return (
     <div>
+      <Stats/>
       <SimpleSlider/>
       <Cater/>
         <Testimonials/>
