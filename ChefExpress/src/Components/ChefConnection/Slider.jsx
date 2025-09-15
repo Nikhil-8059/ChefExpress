@@ -26,8 +26,8 @@ export default function SimpleSlider() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,      // Hide arrows on small screens
-          autoplay: true,     // Enable autoplay on small screens
+          arrows: false,
+          autoplay: true,
           autoplaySpeed: 3000,
         },
       },
@@ -45,39 +45,39 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto py-10 px-4 md:px-10">
+    <div className="w-full max-w-7xl mx-auto py-10 px-4 sm:px-6 md:px-10 overflow-hidden">
       <h1 className="text-3xl md:text-5xl text-center mt-5 mb-3 font-semibold">एक प्रमुख पहल</h1>
 
       <Slider {...settings}>
-        <div className="flex justify-center items-center p-4">
+        <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225427.png"
             alt="Slide 1"
             className="w-full h-auto max-h-80 md:max-h-96 object-contain"
           />
         </div>
-        <div className="flex justify-center items-center p-4">
+        <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 2"
             className="w-full h-auto max-h-80 md:max-h-96 object-contain"
           />
         </div>
-        <div className="flex justify-center items-center p-4">
+        <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 3"
             className="w-full h-auto max-h-80 md:max-h-96 object-contain"
           />
         </div>
-        <div className="flex justify-center items-center p-4">
+        <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 4"
             className="w-full h-auto max-h-80 md:max-h-96 object-contain"
           />
         </div>
-        <div className="flex justify-center items-center p-4">
+        <div className="flex justify-center items-center p-2 sm:p-4">
           <img
             src="images/Screenshot 2025-09-10 225442.png"
             alt="Slide 5"
