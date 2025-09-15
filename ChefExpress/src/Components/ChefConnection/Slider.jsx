@@ -9,7 +9,7 @@ export default function SimpleSlider() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,      // Desktop: show 2 slides side by side
+    slidesToShow: 2,      // Show 2 slides on desktop
     slidesToScroll: 2,
     arrows: true,
     autoplay: true,
@@ -18,7 +18,7 @@ export default function SimpleSlider() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,  // Mobile: show 1 slide at a time
+          slidesToShow: 1,  // Show 1 slide on mobile
           slidesToScroll: 1,
           arrows: false,    // Hide arrows on mobile
           autoplay: true,
@@ -46,59 +46,67 @@ export default function SimpleSlider() {
 
       <Slider {...settings}>
         {/* Slide 1 */}
-        <div className="flex flex-col md:block justify-center items-center p-2 sm:p-4">
-          <img
-            src="images/Screenshot 2025-09-10 225427.png"
-            alt="Slide 1"
-            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
-          />
-          <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 1 second image"
-            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0"
-          />
+        <div className="p-2 sm:p-4">
+          <div className="flex flex-col md:block justify-center items-center">
+            <img
+              src="images/Screenshot 2025-09-10 225427.png"
+              alt="Slide 1"
+              className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
+            />
+            <img
+              src="images/Screenshot 2025-09-10 225442.png"
+              alt="Slide 1 second image"
+              className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0 hidden md:block"
+            />
+          </div>
         </div>
 
         {/* Slide 2 */}
-        <div className="flex flex-col md:block justify-center items-center p-2 sm:p-4">
-          <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 2"
-            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
-          />
-          <img
-            src="images/Screenshot 2025-09-10 225427.png"
-            alt="Slide 2 second image"
-            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0"
-          />
+        <div className="p-2 sm:p-4">
+          <div className="flex flex-col md:block justify-center items-center">
+            <img
+              src="images/Screenshot 2025-09-10 225442.png"
+              alt="Slide 2"
+              className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
+            />
+            <img
+              src="images/Screenshot 2025-09-10 225427.png"
+              alt="Slide 2 second image"
+              className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0 hidden md:block"
+            />
+          </div>
         </div>
 
         {/* Slide 3 */}
-        <div className="flex flex-col md:block justify-center items-center p-2 sm:p-4">
-          <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 3"
-            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
-          />
-          <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 3 second image"
-            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0"
-          />
+        <div className="p-2 sm:p-4">
+          <div className="flex flex-col md:block justify-center items-center">
+            <img
+              src="images/Screenshot 2025-09-10 225442.png"
+              alt="Slide 3"
+              className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
+            />
+            <img
+              src="images/Screenshot 2025-09-10 225442.png"
+              alt="Slide 3 second image"
+              className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0 hidden md:block"
+            />
+          </div>
         </div>
 
         {/* Slide 4 */}
-        <div className="flex flex-col md:block justify-center items-center p-2 sm:p-4">
-          <img
-            src="images/Screenshot 2025-09-10 225442.png"
-            alt="Slide 4"
-            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
-          />
-          <img
-            src="images/Screenshot 2025-09-10 225427.png"
-            alt="Slide 4 second image"
-            className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0"
-          />
+        <div className="p-2 sm:p-4">
+          <div className="flex flex-col md:block justify-center items-center">
+            <img
+              src="images/Screenshot 2025-09-10 225442.png"
+              alt="Slide 4"
+              className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white"
+            />
+            <img
+              src="images/Screenshot 2025-09-10 225427.png"
+              alt="Slide 4 second image"
+              className="w-full h-auto max-h-80 sm:max-h-96 object-contain rounded-lg bg-white mt-4 md:mt-0 hidden md:block"
+            />
+          </div>
         </div>
       </Slider>
     </div>
