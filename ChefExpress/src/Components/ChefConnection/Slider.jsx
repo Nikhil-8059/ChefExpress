@@ -40,7 +40,7 @@ export default function SimpleSlider() {
 
   return (
     <div className="w-full max-w-7xl mx-auto py-6 px-4 sm:px-6 md:px-10">
-      <h1 className="text-3xl text-center mt-4 sm:mt-5 md:mt-8 mb-4 sm:mb-6 md:mb-8 font-semibold">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl text-center mt-4 sm:mt-5 md:mt-8 mb-4 sm:mb-6 md:mb-8 font-semibold">
         एक प्रमुख पहल
       </h1>
 
