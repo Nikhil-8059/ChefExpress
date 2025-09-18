@@ -1,37 +1,41 @@
 import React from "react";
-import { FaUtensils, FaUserCheck, FaHome } from "react-icons/fa";
+import { FaUtensils } from "react-icons/fa";
+import { PiChefHatBold } from "react-icons/pi";
+import { FaHouseUser } from "react-icons/fa";
 
-export default function Stats() { 
+const StatsSection = () => {
   const stats = [
-    {
-      id: 1,
-      icon: <FaUtensils className="text-gray-300 text-6xl" />,
-      number: "3M+",
-      text: "Meals cooked with love",
-    },
-    {
-      id: 2,
-      icon: <FaUserCheck className="text-gray-300 text-6xl" />,
-      number: "4500+",
-      text: "Verified & Trained Cooks",
-    },
-    {
-      id: 3,
-      icon: <FaHome className="text-gray-300 text-6xl" />,
-      number: "10K+",
-      text: "Households served",
-    },
+    { number: "3M+", label: "Meals cooked with love", icon: <FaUtensils /> },
+    { number: "4500+", label: "Verified & Trained Cooks", icon: <PiChefHatBold /> },
+    { number: "10K+", label: "Households served", icon: <FaHouseUser /> },
   ];
 
   return (
-    <div className="w-full max-w-6xl mx-auto py-10 px-4 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-      {stats.map((stat) => (
-        <div key={stat.id} className="flex flex-col items-center space-y-4">
-          {stat.icon}
-          <h2 className="text-3xl font-bold">{stat.number}</h2>
-          <p className="text-gray-600">{stat.text}</p>
+    <section className="bg-white py-12">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="relative border rounded-xl shadow-sm p-6 text-center transition-transform duration-300 hover:scale-105"
+            >
+              {/* Background Icon - only visible on md+ */}
+              <div className="hidden md:block absolute top-4 right-4 text-gray-200 text-6xl pointer-events-none">
+                {stat.icon}
+              </div>
+
+              <h2 className="text-3xl sm:text-4xl font-bold text-black relative z-10">
+                {stat.number}
+              </h2>
+              <p className="mt-2 text-gray-700 text-sm sm:text-base relative z-10">
+                {stat.label}
+              </p>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+    </section>
   );
-}
+};
+
+export default StatsSection;
