@@ -11,7 +11,7 @@ const StatsSection = () => {
           {/* Stats Card 1 */}
           <div className="relative flex flex-col items-center text-center p-6 border rounded-xl md:border-0">
             {/* Watermark Icon (desktop only, shifted right) */}
-            <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-y-1/2 translate-x-6 opacity-10 text-7xl text-gray-400 pointer-events-none">
+            <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-y-1/2 translate-x-6 opacity-25 text-8xl text-gray-500 pointer-events-none">
               <FaUtensils />
             </div>
             <div className="text-5xl font-bold text-black mb-2 relative z-10">3M+</div>
@@ -20,7 +20,7 @@ const StatsSection = () => {
 
           {/* Stats Card 2 */}
           <div className="relative flex flex-col items-center text-center p-6 border rounded-xl md:border-0">
-            <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-y-1/2 translate-x-6 opacity-10 text-7xl text-gray-400 pointer-events-none">
+            <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-y-1/2 translate-x-6 opacity-25 text-8xl text-gray-500 pointer-events-none">
               <PiChefHatBold />
             </div>
             <div className="text-5xl font-bold text-black mb-2 relative z-10">4500+</div>
@@ -29,7 +29,7 @@ const StatsSection = () => {
 
           {/* Stats Card 3 */}
           <div className="relative flex flex-col items-center text-center p-6 border rounded-xl md:border-0">
-            <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-y-1/2 translate-x-6 opacity-10 text-7xl text-gray-400 pointer-events-none">
+            <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-y-1/2 translate-x-6 opacity-25 text-8xl text-gray-500 pointer-events-none">
               <FaHouseUser />
             </div>
             <div className="text-5xl font-bold text-black mb-2 relative z-10">10K+</div>
