@@ -5,7 +5,7 @@ const StatsSection = () => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex justify-center py-8">
-        <div className="flex flex-wrap justify-around w-full">
+        <div  className="flex flex-wrap justify-around w-full">
           {/* Card 1 */}
           <div className="flex flex-col items-center text-center p-4 md:p-6 w-1/3">
             <div className="flex items-center">
