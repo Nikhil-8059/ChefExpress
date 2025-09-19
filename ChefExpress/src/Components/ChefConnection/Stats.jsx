@@ -6,12 +6,12 @@ const StatsSection = () => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex justify-center py-8 px-4 md:px-0">
-        <div className="flex flex-row justify-center w-full gap-3 md:gap-1">
+        <div className="flex flex-row justify-evenly w-full gap-3 md:gap-1">
           {/* Card 1 */}
           <div className="flex flex-col items-center text-center p-4 
                           border rounded-xl md:border-1 md:rounded-none">
             <div className="flex items-center">
-              <div className="text-xl md:text-3xl font-bold text-black">3M+</div>
+              <div className="text-xl md:text-6xl font-bold text-black">3M+</div>
               <FaUtensils className="text-green-600 text-lg md:text-2xl ml-1" />
             </div>
             <p className="text-gray-600 text-xs md:text-lg mt-1">
@@ -23,7 +23,7 @@ const StatsSection = () => {
           <div className="flex flex-col items-center text-center p-4 
                           border rounded-xl md:border-1 md:rounded-none">
             <div className="flex items-center">
-              <div className="text-xl md:text-3xl font-bold text-black">4500+</div>
+              <div className="text-xl md:text-xl font-bold text-black">4500+</div>
               <PiChefHatBold className="text-blue-600 text-lg md:text-2xl ml-1" />
             </div>
             <p className="text-gray-600 text-xs md:text-lg mt-1">
@@ -35,7 +35,7 @@ const StatsSection = () => {
           <div className="flex flex-col items-center text-center p-4
                           border rounded-xl md:border-1 md:rounded-none">
             <div className="flex items-center">
-              <div className="text-xl md:text-3xl font-bold text-black">10K+</div>
+              <div className="text-xl md:text-6xl font-bold text-black">10K+</div>
               <FaHome className="text-orange-600 text-lg md:text-2xl ml-1" />
             </div>
             <p className="text-gray-600 text-xs md:text-lg mt-1">
