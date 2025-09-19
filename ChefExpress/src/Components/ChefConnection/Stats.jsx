@@ -8,7 +8,7 @@ const StatsSection = () => {
         <div className="flex flex-row justify-evenly w-full gap-3 md:gap-1">
 
           {/* Card 1 */}
-          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-4 border rounded-xl md:border-1 md:rounded-none">
+          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-4 border rounded-xl md:border-0 md:rounded-none">
             <span className="text-xl md:text-5xl font-bold text-black z-10 relative">
               3M+
             </span>
@@ -22,7 +22,7 @@ const StatsSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-4 border rounded-xl md:border-1 md:rounded-none">
+          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-4 border rounded-xl md:border-0 md:rounded-none">
             <span className="text-xl md:text-5xl font-bold text-black z-10 relative">
               4500+
             </span>
@@ -36,7 +36,7 @@ const StatsSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-4 border rounded-xl md:border-1 md:rounded-none">
+          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-4 border rounded-xl md:border-0 md:rounded-none">
             <span className="text-xl md:text-5xl font-bold text-black z-10 relative">
               10K+
             </span>
@@ -44,7 +44,7 @@ const StatsSection = () => {
               Households served
             </p>
             <IoHomeOutline
-              className="hidden md:block absolute -right-5 top-2 md:top-4 md:-right-6 text-black opacity-10 text-7xl md:text-8xl z-0 pointer-events-none select-none"
+              className="hidden md:block absolute -right-5 top-2 md:top-4 md:-right-6 text-black opacity-10 text-7xl md:text-xl z-0 pointer-events-none select-none"
               aria-hidden="true"
             />
           </div>
