@@ -11,7 +11,7 @@ const StatsSection = () => {
           <div className="flex flex-col items-center text-center p-4 
                           border rounded-xl md:border-1 md:rounded-none">
             <div className="flex items-center">
-              <div className="text-xl md:text-6xl font-bold text-black">3M+</div>
+              <div className="text-xl md:text-5xl font-bold text-black">3M+</div>
               <FaUtensils className="text-green-600 text-lg md:text-2xl ml-1" />
             </div>
             <p className="text-gray-600 text-xs md:text-lg mt-1">
@@ -23,7 +23,7 @@ const StatsSection = () => {
           <div className="flex flex-col items-center text-center p-4 
                           border rounded-xl md:border-1 md:rounded-none">
             <div className="flex items-center">
-              <div className="text-xl md:text-xl font-bold text-black">4500+</div>
+              <div className="text-xl md:text-5xl font-bold text-black">4500+</div>
               <PiChefHatBold className="text-blue-600 text-lg md:text-2xl ml-1" />
             </div>
             <p className="text-gray-600 text-xs md:text-lg mt-1">
