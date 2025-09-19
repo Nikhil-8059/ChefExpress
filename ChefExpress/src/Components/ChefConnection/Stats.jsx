@@ -9,12 +9,12 @@ const StatsSection = () => {
         {/* Always 3 in a row */}
         <div className="grid grid-cols-3 gap-3 text-center ">
           {/* Card 1 */}
-          <div className=" relative p-3 border rounded-lg md:border-1 md:p-6">
+          <div className=" relative p-3 border rounded-lg  md:p-6">
             {/* Background Icon only on desktop */}
             <div className="hidden md:block absolute top-1/2 right-1 transform -translate-y-1/2 opacity-50 text-6xl text-gray-400 pointer-events-none">
               <FaUtensils />
             </div>
-            <div className="text-lg md:text-4xl  font-bold text-black relative z-10">
+            <div className="text-lg md:text-4xl font-bold text-black relative z-10">
               3M+
             </div>
             <p className=" text-xs md:text-base text-gray-700 relative z-10">
@@ -23,7 +23,7 @@ const StatsSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="relative p-3 border rounded-lg md:border-1 md:p-6">
+          <div className="relative p-3 border rounded-lg  md:p-6">
             <div className="hidden md:block absolute top-1/2 right-2 transform -translate-y-1/2 opacity-50 text-6xl text-gray-400 pointer-events-none">
               <PiChefHatBold />
             </div>
@@ -36,7 +36,7 @@ const StatsSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="relative p-3 border rounded-lg md:border-1 md:p-6">
+          <div className="relative p-3 border rounded-lg  md:p-6">
             <div className="hidden md:block absolute top-1/2 right-4 transform -translate-y-1/2 opacity-50 text-6xl text-gray-400 pointer-events-none">
               <FaHouseUser />
             </div>
