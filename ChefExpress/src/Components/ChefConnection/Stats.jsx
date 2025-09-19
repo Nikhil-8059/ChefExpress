@@ -6,7 +6,7 @@ const StatsSection = () => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex justify-center py-8 px-4 md:px-0">
-        <div className="flex flex-row justify-around w-full gap-3 md:gap-1">
+        <div className="flex flex-row justify-center w-full gap-3 md:gap-1">
           {/* Card 1 */}
           <div className="flex flex-col items-center text-center p-4 
                           border rounded-xl md:border-1 md:rounded-none">
@@ -32,7 +32,7 @@ const StatsSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="flex flex-col items-center text-center p-4 flex-1
+          <div className="flex flex-col items-center text-center p-4
                           border rounded-xl md:border-1 md:rounded-none">
             <div className="flex items-center">
               <div className="text-xl md:text-3xl font-bold text-black">10K+</div>
