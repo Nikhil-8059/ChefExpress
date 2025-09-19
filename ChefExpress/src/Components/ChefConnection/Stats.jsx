@@ -6,7 +6,7 @@ const StatsSection = () => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex justify-center py-8 px-4 md:px-0">
-        <div className="flex flex-row justify-evenly w-full gap-3 md:gap-1">
+        <div className="flex flex-row justify-evenly w-full gap-3 md:gap-0">
 
           {/* Card 1 */}
           <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-2 border rounded-xl md:border-0 md:rounded-none w-36 md:w-auto">
@@ -17,7 +17,7 @@ const StatsSection = () => {
               Meals cooked with love
             </p>
             <IoRestaurant
-              className="hidden md:block absolute -right-5 top-2 md:top-4 md:-right-6 text-black opacity-10 text-7xl md:text-8xl z-0 pointer-events-none select-none"
+              className="hidden md:block absolute md:-right-0 md:top-2 opacity-25 md:text-6xl z-0"
               aria-hidden="true"
             />
           </div>
@@ -31,7 +31,7 @@ const StatsSection = () => {
               Verified & Trained Cooks
             </p>
             <PiChefHat
-              className="hidden md:block absolute md:-right-6 md:top-4 opacity-10 md:text-8xl z-0"
+              className="hidden md:block absolute md:-right-4 md:top-2 opacity-25 md:text-6xl z-0"
               aria-hidden="true"
             />
           </div>
@@ -45,7 +45,7 @@ const StatsSection = () => {
               Households served
             </p>
             <IoHomeOutline
-              className="hidden md:block absolute md:-right-6 md:top-4 opacity-10 md:text-8xl z-0"
+              className="hidden md:block absolute md:-right-6 md:top-2 opacity-25 md:text-6xl z-0"
               aria-hidden="true"
             />
           </div>
