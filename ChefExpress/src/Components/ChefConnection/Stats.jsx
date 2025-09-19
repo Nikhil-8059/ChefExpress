@@ -1,5 +1,6 @@
 import React from "react";
-import { IoRestaurant, IoPerson, IoHomeOutline } from "react-icons/io5";
+import { IoRestaurant, IoHomeOutline } from "react-icons/io5";
+import { PiChefHat } from "react-icons/pi";
 
 const StatsSection = () => {
   return (
@@ -8,7 +9,7 @@ const StatsSection = () => {
         <div className="flex flex-row justify-evenly w-full gap-3 md:gap-1">
 
           {/* Card 1 */}
-          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-4 border rounded-xl md:border-0 md:rounded-none">
+          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-2 border rounded-xl md:border-0 md:rounded-none w-36 md:w-auto">
             <span className="text-xl md:text-5xl font-bold text-black z-10 relative">
               3M+
             </span>
@@ -22,21 +23,21 @@ const StatsSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-4 border rounded-xl md:border-0 md:rounded-none">
+          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-2 border rounded-xl md:border-0 md:rounded-none w-36 md:w-auto">
             <span className="text-xl md:text-5xl font-bold text-black z-10 relative">
               4500+
             </span>
             <p className="text-gray-600 text-xs md:text-lg mt-1 z-10 relative">
               Verified & Trained Cooks
             </p>
-            <IoPerson
-              className="hidden md:block absolute -right-5 top-2 md:top-4 md:-right-6 text-black opacity-10 text-7xl md:text-8xl z-0 pointer-events-none select-none"
+            <PiChefHat
+              className="hidden md:block absolute md:-right-6 md:top-4 opacity-10 md:text-8xl z-0"
               aria-hidden="true"
             />
           </div>
 
           {/* Card 3 */}
-          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-4 border rounded-xl md:border-0 md:rounded-none">
+          <div className="relative flex flex-col md:items-center items-start text-left md:text-center p-2 border rounded-xl md:border-0 md:rounded-none w-36 md:w-auto">
             <span className="text-xl md:text-5xl font-bold text-black z-10 relative">
               10K+
             </span>
@@ -44,7 +45,7 @@ const StatsSection = () => {
               Households served
             </p>
             <IoHomeOutline
-              className="hidden md:block absolute -right-5 top-2 md:top-4 md:-right-6 text-black opacity-10 text-7xl md:text-xl z-0 pointer-events-none select-none"
+              className="hidden md:block absolute md:-right-6 md:top-4 opacity-10 md:text-8xl z-0"
               aria-hidden="true"
             />
           </div>
