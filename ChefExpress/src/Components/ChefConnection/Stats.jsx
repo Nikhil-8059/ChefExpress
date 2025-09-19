@@ -5,7 +5,7 @@ import { PiChefHatBold } from "react-icons/pi";
 const StatsSection = () => {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container mx-auto flex justify-center py-8">
+      <div className="container mx-auto bac flex justify-center py-8">
         <div className="flex flex-row justify-around w-full gap-3 md:gap-0">
           {/* Card 1 */}
           <div className="flex flex-col items-center text-center p-4 flex-1
