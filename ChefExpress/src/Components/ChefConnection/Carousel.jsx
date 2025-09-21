@@ -13,8 +13,24 @@ const HeroCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+
     customPaging: i => (
-      <div className="w-10 h-1 bg-white rounded-sm transition-all duration-300"></div>
+      <div className="w-16 h-1 rounded-sm transition-all duration-300"></div>
+    ),
+
+    appendDots: dots => (
+      <div>
+        <ul className="flex justify-center items-center gap-4">
+          {dots.map(dot =>
+            React.cloneElement(dot, {
+              className: dot.props.className.replace(
+                "slick-active",
+                "bg-orange-500"
+              ) + " bg-white w-16 h-1 rounded-sm transition-all duration-300 cursor-pointer"
+            })
+          )}
+        </ul>
+      </div>
     ),
   };
 
