@@ -8,10 +8,12 @@ import Cater from './Cater'
 import SimpleSlider from './Slider'
 
 import StatsSection from './Stats'
+import HeroCarousel from './Carousel'
 
 const ChefConnection = () => {
   return (
     <div>
+      <HeroCarousel/>
       <StatsSection/>
       <SimpleSlider/>
       <Cater/>
