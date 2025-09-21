@@ -27,7 +27,7 @@ const HeroCarousel = () => {
         {/* Slide 1 */}
         <div className="relative">
           <img
-            src="/images/hero1.jpg" // replace with your image
+            src="public/images/chef.png" // replace with your image
             alt="Hero Slide"
             className="w-full h-[90vh] object-cover"
           />
