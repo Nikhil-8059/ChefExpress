@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./HeroCarousel.css"; // custom CSS for dots
 
 const HeroCarousel = () => {
   const settings = {
@@ -12,7 +13,12 @@ const HeroCarousel = () => {
     autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false, // hides arrows since your screenshot had only dots
+    arrows: false,
+    appendDots: dots => (
+      <div>
+        <ul className="custom-dots"> {dots} </ul>
+      </div>
+    ),
   };
 
   return (
@@ -20,14 +26,11 @@ const HeroCarousel = () => {
       <Slider {...settings}>
         {/* Slide 1 */}
         <div className="relative">
-          {/* Background Image */}
           <img
             src="/images/hero1.jpg" // replace with your image
             alt="Hero Slide"
             className="w-full h-[90vh] object-cover"
           />
-
-          {/* Overlay */}
           <div className="absolute inset-0 bg-black/40 flex items-center">
             <div className="container mx-auto px-6 md:px-12 text-left text-white">
               <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
@@ -43,7 +46,7 @@ const HeroCarousel = () => {
           </div>
         </div>
 
-        {/* Slide 2 (Duplicate for demo) */}
+        {/* Slide 2 */}
         <div className="relative">
           <img
             src="/images/hero2.jpg"
