@@ -14,19 +14,20 @@ const HeroCarousel = () => {
     slidesToScroll: 1,
     arrows: false,
 
-    customPaging: i => (
-      <div className="w-16 h-1 rounded-sm transition-all duration-300"></div>
+    customPaging: () => (
+      <div className="w-8 sm:w-12 md:w-16 h-1 rounded-sm transition-all duration-300"></div>
     ),
 
     appendDots: dots => (
       <div>
-        <ul className="flex justify-center items-center gap-4">
+        <ul className="flex justify-center items-center gap-2 sm:gap-3 md:gap-4">
           {dots.map(dot =>
             React.cloneElement(dot, {
-              className: dot.props.className.replace(
-                "slick-active",
-                "bg-orange-500"
-              ) + " bg-white w-16 h-1 rounded-sm transition-all duration-300 cursor-pointer"
+              className: `w-8 sm:w-12 md:w-16 h-1 rounded-sm transition-all duration-300 cursor-pointer ${
+                dot.props.className.includes("slick-active")
+                  ? "bg-orange-500"
+                  : "bg-white"
+              }`
             })
           )}
         </ul>
@@ -40,19 +41,19 @@ const HeroCarousel = () => {
         {/* Slide 1 */}
         <div className="relative">
           <img
-            src="public/images/chef.png"
+            src="/images/chef.png"
             alt="Hero Slide"
-            className="w-full h-[90vh] object-cover"
+            className="w-full h-[60vh] sm:h-[70vh] md:h-[90vh] object-cover"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center">
-            <div className="container mx-auto px-6 md:px-12 text-left text-white">
-              <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12 text-left text-white">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-3 sm:mb-4">
                 समाज का नज़रिया बदलें
               </h1>
-              <p className="text-base md:text-xl mb-6">
+              <p className="text-sm sm:text-base md:text-xl mb-4 sm:mb-6">
                 देश में कुक की परिभाषा और उनके लिए दृष्टिकोण बदलने में हमारी मदद करें।
               </p>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md font-semibold">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md font-semibold">
                 ChefKart से जुड़ें
               </button>
             </div>
@@ -62,20 +63,42 @@ const HeroCarousel = () => {
         {/* Slide 2 */}
         <div className="relative">
           <img
-            src="/images/hero2.jpg"
+            src="/images/chef2.png"
             alt="Hero Slide 2"
-            className="w-full h-[90vh] object-cover"
+            className="w-full h-[60vh] sm:h-[70vh] md:h-[90vh] object-cover"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center">
-            <div className="container mx-auto px-6 md:px-12 text-left text-white">
-              <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12 text-left text-white">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-3 sm:mb-4">
                 खाना पकाने में बदलाव लाएँ
               </h1>
-              <p className="text-base md:text-xl mb-6">
+              <p className="text-sm sm:text-base md:text-xl mb-4 sm:mb-6">
                 कुक्स को सम्मान और अवसर दिलाने के लिए हमारे साथ जुड़ें।
               </p>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md font-semibold">
-                और जानें
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md font-semibold">
+                ChefKart से जुड़ें
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Slide 3 */}
+        <div className="relative">
+          <img
+            src="/images/chefgroup.png"
+            alt="Hero Slide 3"
+            className="w-full h-[60vh] sm:h-[70vh] md:h-[90vh] object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40 flex items-center">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12 text-left text-white">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-3 sm:mb-4">
+                खाना पकाने में बदलाव लाएँ
+              </h1>
+              <p className="text-sm sm:text-base md:text-xl mb-4 sm:mb-6">
+                कुक्स को सम्मान और अवसर दिलाने के लिए हमारे साथ जुड़ें।
+              </p>
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md font-semibold">
+                ChefKart से जुड़ें
               </button>
             </div>
           </div>
