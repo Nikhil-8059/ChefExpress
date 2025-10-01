@@ -29,7 +29,7 @@ const HeroCarousel = () => {
         {/* Slide 1 */}
         <div className="relative">
           <img
-            src="public/images/chef.png"
+            src="/images/chef.png"
             alt="Hero Slide"
             className="w-full h-[90vh] object-cover"
           />
@@ -51,7 +51,7 @@ const HeroCarousel = () => {
         {/* Slide 2 */}
         <div className="relative">
           <img
-            src="/images/hero2.jpg"
+            src="/images/chef2.png"
             alt="Hero Slide 2"
             className="w-full h-[90vh] object-cover"
           />
