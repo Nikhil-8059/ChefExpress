@@ -1,4 +1,3 @@
-
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -15,23 +14,15 @@ const HeroCarousel = () => {
     slidesToScroll: 1,
     arrows: false,
 
+    // Make each dot look like a rectangle
     customPaging: i => (
-      <div className="w-16 h-1 rounded-sm transition-all duration-300"></div>
+      <div className="w-12 h-1 bg-white rounded-sm"></div>
     ),
 
+    // Wrap dots in a flexbox container
     appendDots: dots => (
-      <div>
-        <ul className="flex justify-center items-center gap-4">
-          {dots.map(dot =>
-            React.cloneElement(dot, {
-              className: `w-16 h-1 rounded-sm transition-all duration-300 cursor-pointer ${
-                dot.props.className.includes("slick-active")
-                  ? "bg-orange-500"
-                  : "bg-white"
-              }`
-            })
-          )}
-        </ul>
+      <div className="absolute bottom-6 w-full">
+        <ul className="flex justify-center items-center gap-3">{dots}</ul>
       </div>
     ),
   };
@@ -82,11 +73,12 @@ const HeroCarousel = () => {
             </div>
           </div>
         </div>
-        {/* Slide 3*/}
+
+        {/* Slide 3 */}
         <div className="relative">
           <img
             src="/images/chefgroup.png"
-            alt="Hero Slide 3" 
+            alt="Hero Slide 3"
             className="w-full h-[90vh] object-cover"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center">
@@ -104,6 +96,13 @@ const HeroCarousel = () => {
           </div>
         </div>
       </Slider>
+
+      {/* Style override for active dot */}
+      <style>{`
+        .slick-dots li.slick-active div {
+          background-color: #f97316 !important; /* orange */
+        }
+      `}</style>
     </section>
   );
 };
