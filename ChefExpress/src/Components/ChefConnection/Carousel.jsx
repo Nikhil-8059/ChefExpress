@@ -1,3 +1,4 @@
+
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -13,13 +14,25 @@ const HeroCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+
+    customPaging: i => (
+      <div className="w-16 h-1 rounded-sm transition-all duration-300"></div>
+    ),
+
     appendDots: dots => (
       <div>
-        <ul className="flex justify-center space-x-3">{dots}</ul>
+        <ul className="flex justify-center items-center gap-4">
+          {dots.map(dot =>
+            React.cloneElement(dot, {
+              className: `w-16 h-1 rounded-sm transition-all duration-300 cursor-pointer ${
+                dot.props.className.includes("slick-active")
+                  ? "bg-orange-500"
+                  : "bg-white"
+              }`
+            })
+          )}
+        </ul>
       </div>
-    ),
-    customPaging: i => (
-      <div className="w-10 h-1 bg-white rounded-sm transition-all duration-300"></div>
     ),
   };
 
@@ -64,7 +77,28 @@ const HeroCarousel = () => {
                 कुक्स को सम्मान और अवसर दिलाने के लिए हमारे साथ जुड़ें।
               </p>
               <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md font-semibold">
-                और जानें
+                ChefKart से जुड़ें
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* Slide 3*/}
+        <div className="relative">
+          <img
+            src="/images/chefgroup.png"
+            alt="Hero Slide 3" 
+            className="w-full h-[90vh] object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40 flex items-center">
+            <div className="container mx-auto px-6 md:px-12 text-left text-white">
+              <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
+                खाना पकाने में बदलाव लाएँ
+              </h1>
+              <p className="text-base md:text-xl mb-6">
+                कुक्स को सम्मान और अवसर दिलाने के लिए हमारे साथ जुड़ें।
+              </p>
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md font-semibold">
+                ChefKart से जुड़ें
               </button>
             </div>
           </div>
