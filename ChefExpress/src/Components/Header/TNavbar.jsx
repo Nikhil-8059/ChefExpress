@@ -35,7 +35,7 @@ const TNavbar = () => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <header className="text-white body-font bg-slate-900">
+    <header className="text-white body-font bg-stone-950">
       <div className="container mx-auto flex flex-wrap px-8 py-5 flex-row items-center justify-between">
         {/* Logo */}
         <Link to="/home" className="flex items-center">
