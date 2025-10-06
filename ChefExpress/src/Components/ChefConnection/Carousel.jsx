@@ -21,7 +21,7 @@ const slides = [
     title: "ChefKart का हिस्सा बनें",
     subtitle: "हमसे जुड़े 4500 से भी ज़्यादा कुक्स का हिस्सा बनें और अपने कौशल को आगे बढ़ाएँ।",
     buttonText: "ChefKart से जुड़ें",
-    imageUrl: "https://placehold.co/1200x900/831843/ffffff?text=Chef+Team+Background+3",
+    imageUrl: "https://github.com/Nikhil-8059/ChefExpress/blob/main/ChefExpress/public/images/chefgroup.png?raw=true",
   },
 ];
 
