@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-// import { ChevronLeft, ChevronRight } from 'lucide-react'; 
 
 // --- Carousel Data (Using Hindi Text and Image URLs for Background) ---
-// IMPORTANT: Update these URLs with optimized versions (desktop/mobile)
 const slides = [
   {
     id: 1,
@@ -29,94 +27,30 @@ const slides = [
 
 const HeroCarousel = () => {
   const [current, setCurrent] = useState(0);
-  // STATE ADDED: Tracks if the user is currently holding down the mouse/finger
-  const [isDragging, setIsDragging] = useState(false);
-  // STATE ADDED: Records the starting X position of the drag
-  const [dragStartX, setDragStartX] = useState(0);
-  // REF ADDED: Allows reading the actual width of the carousel DOM element
-  const carouselRef = useRef(null);
 
-  // Navigate to the previous slide
-  const prev = useCallback(() => {
-    setCurrent(current => (current === 0 ? slides.length - 1 : current - 1));
-  }, []);
-
-  // Navigate to the next slide
+  // Navigate to the next slide (used for both button click and auto-play)
   const next = useCallback(() => {
     setCurrent(current => (current === slides.length - 1 ? 0 : current + 1));
   }, []);
 
-  // Auto-slide functionality
+  // Auto-slide functionality (Simplified)
   useEffect(() => {
     const slideInterval = setInterval(next, 5000);
+    // Cleanup: Stop auto-play when the component is unmounted
     return () => clearInterval(slideInterval);
   }, [next]);
   
-  // --- Drag/Swipe Handlers (Consolidated Mouse and Touch) ---
-  
-  const handleDragStart = (e) => {
-    setIsDragging(true);
-    // Use clientX for mouse events, or the first touch point's clientX for touch events
-    // This is how we get the starting point for both mouse and touch gestures.
-    setDragStartX(e.clientX || (e.touches && e.touches[0].clientX) || 0);
-  };
-
-  const handleDragEnd = (e) => {
-    if (!isDragging) return;
-    setIsDragging(false);
-
-    // Get ending X position from mouse or touch event
-    const dragEndX = e.clientX || (e.changedTouches && e.changedTouches[0].clientX) || 0;
-    const dragDistance = dragEndX - dragStartX;
-    
-    // Determine required swipe threshold (e.g., 20% of the carousel width)
-    const carouselWidth = carouselRef.current ? carouselRef.current.offsetWidth : 0;
-    const swipeThreshold = carouselWidth * 0.2; 
-
-    // Check if the drag was far enough to count as a swipe
-    if (Math.abs(dragDistance) > swipeThreshold) {
-      if (dragDistance > 0) {
-        // Positive distance means swipe right (Previous slide)
-        prev();
-      } else {
-        // Negative distance means swipe left (Next slide)
-        next();
-      }
-    }
-  };
-
-  // Prevents navigation if the user clicks a button or link inside the carousel while dragging
-  const preventDragOnInteractive = (e) => {
-    const tagName = e.target.tagName;
-    if (tagName === 'BUTTON' || tagName === 'A') {
-      e.stopPropagation();
-    }
-  };
+  // --- END OF CORE LOGIC ---
 
   return (
     <div 
-      ref={carouselRef}
-      // Added cursor: grabbing styles for drag feedback
-      className="relative w-full overflow-hidden select-none cursor-grab active:cursor-grabbing" 
-      
-      // MOUSE HANDLERS
-      onMouseDown={handleDragStart}
-      onMouseUp={handleDragEnd}
-      onMouseLeave={isDragging ? handleDragEnd : null} 
-      // Prevent browser default drag behavior (like highlighting text) while dragging
-      onMouseMove={(e) => isDragging && (e.preventDefault())} 
-      
-      // TOUCH HANDLERS (CRITICAL FOR MOBILE SWIPING)
-      onTouchStart={handleDragStart}
-      onTouchEnd={handleDragEnd}
-      
-      // Stop drag handling if the click target was an interactive element
-      onClick={preventDragOnInteractive}
+      // Removed all complex mouse/touch handlers and ref={carouselRef}
+      className="relative w-full overflow-hidden" 
     >
       
       {/* --- Carousel Track --- */}
       <div
-        className="flex transition-transform duration-1000 ease-in-out"
+        className="flex transition-transform duration-300 ease-in-out"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {slides.map((slide, i) => (
@@ -142,6 +76,7 @@ const HeroCarousel = () => {
                     {slide.subtitle}
                   </p>
                   <button 
+                    // Simple click handler remains
                     onClick={() => console.log(`Button clicked for slide ${slide.id}`)}
                     className="px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-xl hover:bg-orange-600 transition duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-orange-300"
                   >
@@ -155,16 +90,14 @@ const HeroCarousel = () => {
         ))}
       </div>
 
-      {/* --- Indicators (Dots - Mixed shape style applied) --- */}
+      {/* --- Indicators (Dots - Manual Navigation) --- */}
       <div className="absolute bottom-10 left-0 right-0">
         <div className="flex items-center justify-center space-x-3">
           {slides.map((_, i) => (
             <button
               key={i}
-              onClick={(e) => {
-                e.stopPropagation(); 
-                setCurrent(i);
-              }}
+              // Simple direct navigation logic
+              onClick={() => setCurrent(i)}
               aria-label={`Go to slide ${i + 1}`}
               className={`transition-all duration-300 rounded-full h-2 ${ 
                 i === current 
