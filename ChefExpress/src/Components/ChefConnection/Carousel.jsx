@@ -134,7 +134,7 @@ const HeroCarousel = () => {
               {/* --- Content Area (Text and Button) --- */}
               <div className="absolute inset-0 w-full flex flex-col justify-center items-start p-6 sm:p-12 lg:p-20">
                 <div className="max-w-xl text-left"> 
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-snug drop-shadow-lg">
+                  <h1 className="text-4xl sm:text-5xl lg:text-5xl font-extrabold mb-4 leading-snug drop-shadow-lg">
                     {slide.title}
                   </h1>
                   <p className="text-lg sm:text-xl lg:text-2xl mb-8 font-light drop-shadow-md">
@@ -142,7 +142,7 @@ const HeroCarousel = () => {
                   </p>
                   <button 
                     onClick={() => console.log(`Button clicked for slide ${slide.id}`)}
-                    className="px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-xl hover:bg-orange-600 transition duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-orange-300"
+                    className="px-7 py-3 bg-orange-500 text-lg font-semibold rounded-lg shadow-xl hover:bg-orange-600 transition duration-300 transform hover:scale-105 active:scale-95 "
                   >
                     {slide.buttonText}
                   </button>
