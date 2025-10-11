@@ -1,8 +1,11 @@
 import React from 'react'
+import FoodBanner from './FoodBanner'
 
 const Month = () => {
   return (
-    <div>Monthfvmfkmbkfmbklf</div>
+    <div>
+      <FoodBanner />
+    </div>
   )
 }
 
