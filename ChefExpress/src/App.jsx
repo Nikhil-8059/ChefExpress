@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div>
       
-    <Head/>
+    {/* <Head/> */}
     <TNavbar/>
       <Routes>
        <Route path='/home' element={<Home/>}/>
