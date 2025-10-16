@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const FaqMonth = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -53,13 +54,12 @@ const FaqMonth = () => {
                 className="w-full flex justify-between items-center px-5 sm:px-6 py-4 sm:py-5 text-left text-lg sm:text-xl font-medium text-gray-800 focus:outline-none"
               >
                 {faq.question}
-                <span
-                  className={`transform transition-transform duration-300 ${
-                    activeIndex === index ? "rotate-180" : ""
-                  }`}
-                >
-                  ▼
-                </span>
+                <ChevronDown
+  className={`transform transition-transform duration-300 text-orange-600 ${
+    activeIndex === index ? "rotate-180" : ""
+  }`}
+/>
+
               </button>
 
               {activeIndex === index && (
